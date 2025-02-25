@@ -1,0 +1,99 @@
+/* Contenedor principal de habilidades */
+.habilidades-container {
+  width: 100%;
+  max-width: 500px; /* Un poco más pequeño */
+  margin: auto;
+  text-align: left;
+  font-family: "Poppins", sans-serif;
+  background: #1e1e1e;
+  padding: 15px; /* Menos padding */
+  border-radius: 8px; /* Bordes más suaves */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Título de la sección */
+.habilidades-titulo {
+  text-align: center;
+  font-size: 18px; /* Letra más pequeña */
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+/* Cada habilidad */
+.habilidad {
+  margin: 10px 0;
+}
+
+/* Nombre de la habilidad */
+.habilidad-nombre {
+  font-weight: 500; /* Menos grueso */
+  font-size: 14px; /* Letra más pequeña */
+  margin-bottom: 4px;
+  display: block;
+  color: #ffffff;
+}
+
+/* Contenedor de la barra de progreso */
+.barra-container {
+  width: 100%;
+  height: 14px; /* Más delgada */
+  background: #333;
+  border-radius: 7px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: inset 0px 2px 5px rgba(255, 255, 255, 0.1);
+}
+
+/* Barra de progreso con color azul MySQL */
+.barra-progreso {
+  height: 100%;
+  border-radius: 7px;
+  text-align: right;
+  position: relative;
+  transition: width 1.5s ease-in-out;
+  background-color: #00758F; /* Azul MySQL */
+  box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center; /* Centra el número dentro de la barra */
+  padding-right: 5px; /* Espaciado interno */
+}
+
+/* Ajustamos el número dentro de la barra */
+.barra-texto {
+  font-size: 12px; /* Letra más pequeña */
+  font-weight: bold;
+  color: #ffffff; /* Color blanco */
+  position: absolute;
+  right: 5px; /* Pegado al borde derecho */
+  top: 50%;
+  transform: translateY(-50%); /* Centrado vertical */
+}
+
+/* Efecto de resplandor */
+.barra-progreso::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -40px;
+  width: 50px;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  transform: skewX(-30deg);
+  animation: glow 2.5s infinite linear;
+}
+
+/* Animación del resplandor */
+@keyframes glow {
+  0% {
+    left: -50px;
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    left: 100%;
+    opacity: 0;
+  }
+}

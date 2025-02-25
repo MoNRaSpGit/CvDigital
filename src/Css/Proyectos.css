@@ -1,0 +1,122 @@
+/* Contenedor principal */
+.proyectos-container {
+  width: 100%;
+  height: 100%; /* Ocupa todo el alto de la sección */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centra el contenido verticalmente */
+  align-items: center; /* Centra el contenido horizontalmente */
+  background: #1e1e1e;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  color: white;
+}
+
+
+/* Título */
+.proyectos-titulo {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 10px;
+  margin-top: -48px; /* Mueve el título más arriba */
+  padding-bottom: 30px;
+}
+
+/* Grid de proyectos en fila */
+.proyectos-grid {
+  display: flex;
+  gap: 10px; /* Espaciado entre tarjetas */
+  justify-content: center;
+}
+
+/* Tarjetas de proyectos */
+.proyecto-item {
+  background: #2a2a2a;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 30%; /* Tamaño ajustado para que entren en fila */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.proyecto-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
+}
+
+.proyecto-item h3 {
+  font-size: 16px;
+  color: #f7df1e; /* Amarillo JS */
+}
+
+.proyecto-item p {
+  font-size: 14px;
+  color: #cccccc;
+}
+
+/* Modal */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: #2a2a2a;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  width: 80%;
+  max-width: 400px;
+  box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
+}
+
+.modal-content h3 {
+  font-size: 18px;
+  color: #f7df1e;
+}
+
+.modal-content p {
+  font-size: 14px;
+  color: #cccccc;
+  margin-bottom: 10px;
+}
+
+/* Botón "Ver proyecto" */
+.modal-content a {
+  display: inline-block;
+  background: #444; /* Color oscuro en lugar del azul */
+  color: #f7df1e; /* Amarillo JS */
+  padding: 8px 12px;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-bottom: 10px;
+  transition: background 0.3s;
+}
+
+.modal-content a:hover {
+  background: #333; /* Más oscuro al pasar el mouse */
+}
+
+/* Botón "Cerrar" */
+.modal-cerrar {
+  background: #555; /* Color oscuro */
+  color: #f7df1e; /* Amarillo para hacer juego */
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.modal-cerrar:hover {
+  background: #444; /* Más oscuro al pasar el mouse */
+}
