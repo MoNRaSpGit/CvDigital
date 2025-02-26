@@ -1,14 +1,15 @@
 {
   "files": {
-    "main.css": "/CvDigital/static/css/main.aed5dd72.css",
-    "main.js": "/CvDigital/static/js/main.2287c27c.js",
+    "main.css": "/CvDigital/static/css/main.5bd1af65.css",
+    "main.js": "/CvDigital/static/js/main.77d2e47b.js",
+    "static/media/resolucion.jpg": "/CvDigital/static/media/resolucion.4f390cf1641bed5e7207.jpg",
     "static/media/equipo.jpg": "/CvDigital/static/media/equipo.3acc22d2e827f0c215ad.jpg",
     "index.html": "/CvDigital/index.html",
-    "main.aed5dd72.css.map": "/CvDigital/static/css/main.aed5dd72.css.map",
-    "main.2287c27c.js.map": "/CvDigital/static/js/main.2287c27c.js.map"
+    "main.5bd1af65.css.map": "/CvDigital/static/css/main.5bd1af65.css.map",
+    "main.77d2e47b.js.map": "/CvDigital/static/js/main.77d2e47b.js.map"
   },
   "entrypoints": [
-    "static/css/main.aed5dd72.css",
-    "static/js/main.2287c27c.js"
+    "static/css/main.5bd1af65.css",
+    "static/js/main.77d2e47b.js"
   ]
 }
