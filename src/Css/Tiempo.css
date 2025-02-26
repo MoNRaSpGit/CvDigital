@@ -1,0 +1,66 @@
+/* Contenedor principal */
+.tiempo-container {
+    width: 100%;
+    height: 100%;
+    background: #1e1e1e; /* Fondo oscuro */
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  /* Contenedor del título */
+  .titulo-container {
+    width: 100%;
+    
+  }
+  
+  /* Título */
+  .tiempo-titulo {
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff; /* Blanco */
+    
+    
+  }
+  
+  /* Contenedor de la gráfica (evita que se corte) */
+  .grafico-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    overflow: visible; /* Asegura que la gráfica no se recorte */
+  }
+  
+  /* Leyenda personalizada (ahora en fila) */
+  .custom-legend {
+    display: flex;
+    flex-direction: row; /* Se alinea en fila */
+    justify-content: center; /* Centrado horizontal */
+    gap: 15px; /* Espaciado entre los elementos */
+    font-size: 12px;
+    color: #ffffff;
+    margin-top: 10px;
+  }
+  
+  /* Elementos de la leyenda */
+  .legend-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 5px;
+  }
+  
+  /* Cuadrados en vez de círculos */
+  .legend-color {
+    width: 12px;
+    height: 12px;
+    border-radius: 2px;
+  }
+  

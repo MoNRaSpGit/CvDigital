@@ -5,6 +5,8 @@ import Habilidades from "./Habilidades";
 import Proyectos from "./Proyectos"; 
 import Experiencia from "./Experiencia"; 
 import Contacto from "./Contacto"; 
+import Tiempo from "./Tiempo"; 
+import Educacion from "./Educacion"; // Importamos la nueva sección
 
 function CVLayout() {
   return (
@@ -20,15 +22,20 @@ function CVLayout() {
           <div className="cv-section">
             <Experiencia />
           </div>
+          <div className="cv-section">
+            <Educacion /> {/* Nueva Sección: Educación */}
+          </div>
         </div>
 
         <div className="cv-column">
-          <div className="cv-section">2</div>
+          <div className="cv-section">
+            <Tiempo />
+          </div>
           <div className="cv-section">
             <Proyectos />
           </div>
           <div className="cv-section">
-            <Contacto /> {/* Sección 6: Contacto */}
+            <Contacto />
           </div>
         </div>
       </div>

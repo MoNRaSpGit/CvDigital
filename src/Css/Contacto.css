@@ -18,9 +18,8 @@
   font-size: 18px;
   font-weight: bold;
   color: #ffffff;
-  margin-bottom: 10px;
-  margin-top: -18px; /* Mueve el título más arriba */
-  padding-bottom: 10px;
+  margin-bottom: 0px;
+  
 }
 
 /* Grid de contacto */
