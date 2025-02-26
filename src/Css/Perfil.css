@@ -2,8 +2,8 @@
 .perfil-container {
   width: 100%;
   height: 100%;
-  background: #1e1e1e; /* Fondo oscuro */
-  padding: 20px;
+  background: #1e1e1e;
+  padding: 40px;
   border-radius: 8px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
   display: flex;
@@ -13,29 +13,44 @@
   text-align: center;
 }
 
-/* Contenedor de la imagen con efecto giratorio */
-/* Contenedor de la imagen con efecto giratorio */
+/* Nuevo título de la sección */
+.perfil-seccion-titulo {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 20px;
+}
+
+/* Contenedor de la imagen con efecto giratorio y borde dividido */
 .perfil-foto-container {
-  width: 120px;
-  height: 120px;
+  width: 180px; /* Imagen más grande */
+  height: 180px;
   position: relative;
-  perspective: 1000px; /* Da el efecto 3D */
+  perspective: 1000px;
   cursor: pointer;
-  margin-bottom: 15px; /* Espacio entre la imagen y el texto */
-  
-  /* Centrando la imagen */
+  margin-bottom: 15px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
+/* Efecto de borde dividido en dos colores oscuros */
+.perfil-foto-container::before {
+  content: "";
+  position: absolute;
+  width: 200px; /* Un poco más grande que la imagen */
+  height: 200px;
+  border-radius: 50%;
+  background: conic-gradient(#5a5a5a 0deg 180deg, #2c2c2c 180deg 360deg); /* Gris claro y gris oscuro */
+  z-index: -1;
+}
 
 /* Imágenes dentro del contenedor */
 .perfil-foto {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  border: 3px solid white;
+  border: 4px solid white; /* Agregamos un borde blanco interno */
   position: absolute;
   backface-visibility: hidden;
   transition: transform 0.6s ease-in-out;
@@ -62,15 +77,62 @@
 
 /* Nombre */
 .perfil-titulo {
-  font-size: 20px;
+  font-size: 26px;
   font-weight: bold;
-  color: #f7df1e; /* Amarillo para destacar */
+  color: #f7df1e;
   margin: 5px 0;
 }
 
 /* Descripción */
 .perfil-subtitulo {
-  font-size: 14px;
+  font-size: 18px;
   font-weight: bold;
   color: #cccccc;
+  margin-bottom: 10px;
+}
+
+/* Iconos de tecnologías */
+.perfil-tecnologias {
+  display: flex;
+  flex-direction: column; /* Se organizan en filas */
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.perfil-tecnologias-fila {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Iconos */
+.perfil-icono {
+  font-size: 34px;
+  color: white;
+  transition: transform 0.3s ease-in-out;
+}
+
+.perfil-icono:hover {
+  transform: scale(1.2);
+}
+
+/* Colores específicos */
+.react {
+  color: #61dafb;
+}
+
+.node {
+  color: #3c873a;
+}
+
+.mysql {
+  color: #00758F;
+}
+
+.github {
+  color: #f7df1e;
+}
+
+.render {
+  color: #a5b4fc;
 }
